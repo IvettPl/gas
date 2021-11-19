@@ -899,11 +899,11 @@ footer {
 }
 
 .tab__content-item {
-  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
   box-sizing: border-box;
   width: 100%;
-  min-height: 100px;
-  padding: 50px 30px;
 }
 
 .tab__content-item .tradingview-widget-container {
@@ -930,7 +930,11 @@ footer {
 }
 
 .tab__content-item--active {
-  display: block;
+  opacity: 1;
+  height: auto;
+  
+  min-height: 100px;
+  padding: 50px 30px;
 }
 
 #tradingview_71603-wrapper {
@@ -2319,7 +2323,7 @@ footer {
     line-height: 46px;
   }
 
-  .tab__content-item {
+  .tab__content-item--active {
     padding: 20px;
   }
 
